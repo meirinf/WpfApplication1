@@ -16,9 +16,6 @@
                 </LinearGradientBrush>
             </TextBox.BorderBrush>
         </TextBox>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="126" Height="26">
-            <Button x:Name="Alarma" Content="Alarma" Width="116" Click="Alarma"/>
-            <Button x:Name="Ayuda" Content="Ayuda" Width="116" Click="Ayuda"/>
-        </ComboBox>
+        <Button x:Name="Ayuda" Content="Ayuda" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
     </Grid>
 </Window>

@@ -49,5 +49,14 @@ namespace WpfApplication1
         {
             relojito1.Text = DateTime.Now.ToString();
         }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        { 
+            MessageBoxResult result = MessageBox.Show("HOLA!!! Soy Relojito te digo la hora y si me activas, una alarma en la hora predeterminada te dare un aviso.  GRACIAS POR USARME ^^. ¿Quieres apagarme?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+            {
+                MessageBox.Show("Adios");
+                Application.Current.Shutdown();
+            }
+        }
     }
 }
