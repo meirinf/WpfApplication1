@@ -16,6 +16,8 @@
                 </LinearGradientBrush>
             </TextBox.BorderBrush>
         </TextBox>
-        <Button x:Name="Ayuda" Content="Ayuda" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="517" RenderTransformOrigin="0.506,0.154">
+            <Button x:Name="Ayuda" Content="Ayuda" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Click="Button_Click" RenderTransformOrigin="-0.597,0.57"/>
+        </Menu>
     </Grid>
 </Window>
