@@ -19,5 +19,6 @@
         <Menu x:Name="menu" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="517" RenderTransformOrigin="0.506,0.154">
             <Button x:Name="Ayuda" Content="Ayuda" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Click="Button_Click" RenderTransformOrigin="-0.597,0.57"/>
         </Menu>
+        <Button x:Name="Programar" Content="Programar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="96" Click="Programar_Click" Margin="99,2,0,0" />
     </Grid>
 </Window>

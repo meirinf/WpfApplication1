@@ -58,5 +58,9 @@ namespace WpfApplication1
                 Application.Current.Shutdown();
             }
         }
+        private void Programar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
