@@ -7,18 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid x:Name="relojito">
-        <TextBox x:Name="relojito1" HorizontalAlignment="Left" Height="38" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="517" FontFamily="Snap ITC" SelectionOpacity="-2" Background="#FFDC2626" Margin="0,114,0,0">
-            <TextBox.BorderBrush>
-                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
-                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
-                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
-                    <GradientStop Color="#FFF2F3F3" Offset="1"/>
-                </LinearGradientBrush>
-            </TextBox.BorderBrush>
-        </TextBox>
+        <TextBox x:Name="relojito1" HorizontalAlignment="Left" Height="86" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="517" FontFamily="Symbol" SelectionOpacity="-2" Background="#FFA6B4A6" Margin="0,96,0,0" FontSize="60" BorderBrush="Black"/>
         <Menu x:Name="menu" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="517" RenderTransformOrigin="0.506,0.154">
             <Button x:Name="Ayuda" Content="Ayuda" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Click="Button_Click" RenderTransformOrigin="-0.597,0.57"/>
         </Menu>
         <Button x:Name="Programar" Content="Programar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="96" Click="Programar_Click" Margin="99,2,0,0" />
+        <!-- Visibility : ES PARA CAMBIAR LA VISIBILIDAD HIDDEN (INVISIBLE) VISIBLE (SE VE) -->
+        <TextBox x:Name="Alarma" HorizontalAlignment="Left" Height="39" Margin="0,281,0,0" TextWrapping="Wrap" Text="Alarma nueva :" VerticalAlignment="Top" Width="115"  Visibility="Visible" FontFamily="Wide Latin" Grid.IsSharedSizeScope="True" ScrollViewer.CanContentScroll="True" FontWeight="Bold" FontStyle="Italic" TextDecorations="Underline" Background="#FFA6A2A2" CaretBrush="Black" BorderBrush="Black"/>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="425,281,0,0" VerticalAlignment="Top" Width="92" Height="39"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="39" Margin="120,281,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="300" BorderBrush="Black" Background="White"/>
     </Grid>
 </Window>

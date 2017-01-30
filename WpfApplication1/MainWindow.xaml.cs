@@ -60,7 +60,7 @@ namespace WpfApplication1
         }
         private void Programar_Click(object sender, RoutedEventArgs e)
         {
-
+            Alarma.Visibility = System.Windows.Visibility.Visible;
         }
     }
 }
