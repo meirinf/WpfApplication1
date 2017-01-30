@@ -24,6 +24,7 @@ namespace WpfApplication1
         private DispatcherTimer dispatcherTimer;
         private object lastTime;
         private DateTimeOffset startTime;
+        private String data; 
 
         public MainWindow()
         {
@@ -42,12 +43,23 @@ namespace WpfApplication1
            // TimerLog.Text += "Calling dispatcherTimer.Start()\n";
             dispatcherTimer.Start();
             //IsEnabled should now be true after calling start
-           // TimerLog.Text += "dispatcherTimer.IsEnabled = " + dispatcherTimer.IsEnabled + "\n";
+            // TimerLog.Text += "dispatcherTimer.IsEnabled = " + dispatcherTimer.IsEnabled + "\n";
+           
         }
 
         private void dispatcherTimer_Tick(object sender, EventArgs e)
         {
             relojito1.Text = DateTime.Now.ToString();
+            String[] time = relojito1.Text.Split(' ');
+            
+            if (data != null && data.Equals(time[1]))
+            {
+                MessageBoxResult result = MessageBox.Show("Es la hora!!!! Quieres desactivarme ?","Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
+                {
+                    data = "";
+                }
+            }
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         { 
@@ -60,7 +72,19 @@ namespace WpfApplication1
         }
         private void Programar_Click(object sender, RoutedEventArgs e)
         {
-            Alarma.Visibility = System.Windows.Visibility.Visible;
+            Alarma.Visibility = Visibility.Visible;
+            hora_alarma.Visibility = Visibility.Visible;
+            OK.Visibility = Visibility.Visible;
         }
+
+        private void OK_Click(object sender, RoutedEventArgs e)
+        {
+            data = hora_alarma.Text;
+            Alarma.Visibility = Visibility.Hidden;
+            hora_alarma.Visibility = Visibility.Hidden;
+            OK.Visibility = Visibility.Hidden;
+
+        }
+
     }
 }
