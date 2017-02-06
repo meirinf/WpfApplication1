@@ -13,8 +13,8 @@
         </Menu>
         <Button x:Name="Programar" Content="Programar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="96" Click="Programar_Click" Margin="99,2,0,0" />
         <!-- Visibility : ES PARA CAMBIAR LA VISIBILIDAD HIDDEN (INVISIBLE) VISIBLE (SE VE) -->
-        <TextBox x:Name="Alarma" HorizontalAlignment="Left" Height="39" Margin="0,281,0,0" TextWrapping="Wrap" Text="Alarma nueva :" VerticalAlignment="Top" Width="115"  Visibility="Hidden" FontFamily="Wide Latin" Grid.IsSharedSizeScope="True" ScrollViewer.CanContentScroll="True" FontWeight="Bold" FontStyle="Italic" TextDecorations="Underline" Background="#FFA6A2A2" CaretBrush="Black" BorderBrush="Black"/>
-        <Button x:Name="OK" Content="OK" HorizontalAlignment="Left" Margin="425,281,0,0" VerticalAlignment="Top" Width="92" Height="39" Visibility="Hidden" Click="OK_Click"/>
-        <TextBox x:Name= "hora_alarma" Margin="120,281,97,0" TextWrapping="Wrap" Text="00:00:00" BorderBrush="Black" Background="White" Visibility="Hidden" />
+        <TextBox x:Name="Alarma" HorizontalAlignment="Left" Margin="0,281,0,0" TextWrapping="Wrap" Text="Alarma nueva :" Width="115"  Visibility="Hidden" FontFamily="Wide Latin" Grid.IsSharedSizeScope="True" ScrollViewer.CanContentScroll="True" FontWeight="Bold" FontStyle="Italic" TextDecorations="Underline" Background="#FFA6A2A2" CaretBrush="Black" BorderBrush="Black"/>
+        <Button x:Name="OK" Content="OK" Margin="425,281,0,0" Visibility="Hidden" Click="OK_Click"/>
+        <TextBox x:Name= "hora_alarma" Margin="127,281,0,0" TextWrapping="Wrap" Text="00:00:00" BorderBrush="Black" Background="White" Visibility="Hidden" HorizontalAlignment="Left" Width="286" />
     </Grid>
 </Window>
