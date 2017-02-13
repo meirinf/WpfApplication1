@@ -24,7 +24,8 @@ namespace WpfApplication1
         private DispatcherTimer dispatcherTimer;
         private object lastTime;
         private DateTimeOffset startTime;
-        private String data; 
+        private String data;
+        private Reloj reloj = new Reloj();
 
         public MainWindow()
         {
@@ -84,7 +85,16 @@ namespace WpfApplication1
             hora_alarma.Visibility = Visibility.Hidden;
             OK.Visibility = Visibility.Hidden;
 
+            reloj.data = data;
+            //Agregamos la alarma a la list box
+            Alarmas.Items.Add(reloj.data);
+            
+
         }
 
+        private void Alarmas_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

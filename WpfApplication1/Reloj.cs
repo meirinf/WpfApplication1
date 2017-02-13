@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WpfApplication1
 {
-   
+    [Serializable()]
     public class Reloj 
     {
         /// getter y setter
@@ -16,9 +16,8 @@ namespace WpfApplication1
         {
             this.data = data;
         }
-
-
-
-
+        public Reloj()
+            {
+            }
     }
 }

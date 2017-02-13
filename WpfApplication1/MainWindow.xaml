@@ -6,15 +6,16 @@
         xmlns:local="clr-namespace:WpfApplication1"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid x:Name="relojito">
+    <Grid x:Name="relojito" RenderTransformOrigin="0.507,0.57" Margin="0,0,2,0">
         <TextBox x:Name="relojito1" Height="86" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" FontFamily="Symbol" SelectionOpacity="-2" Background="#FFA6B4A6" Margin="0,96,0,0" FontSize="60" BorderBrush="Black"/>
         <Menu x:Name="menu" Height="28" VerticalAlignment="Top" RenderTransformOrigin="0.506,0.154">
             <Button x:Name="Ayuda" Content="Ayuda" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Click="Button_Click" RenderTransformOrigin="-0.597,0.57"/>
         </Menu>
         <Button x:Name="Programar" Content="Programar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="96" Click="Programar_Click" Margin="99,2,0,0" />
         <!-- Visibility : ES PARA CAMBIAR LA VISIBILIDAD HIDDEN (INVISIBLE) VISIBLE (SE VE) -->
-        <TextBox x:Name="Alarma" HorizontalAlignment="Left" Margin="0,281,0,0" TextWrapping="Wrap" Text="Alarma nueva :" Width="115"  Visibility="Hidden" FontFamily="Wide Latin" Grid.IsSharedSizeScope="True" ScrollViewer.CanContentScroll="True" FontWeight="Bold" FontStyle="Italic" TextDecorations="Underline" Background="#FFA6A2A2" CaretBrush="Black" BorderBrush="Black"/>
-        <Button x:Name="OK" Content="OK" Margin="425,281,0,0" Visibility="Hidden" Click="OK_Click"/>
-        <TextBox x:Name= "hora_alarma" Margin="127,281,0,0" TextWrapping="Wrap" Text="00:00:00" BorderBrush="Black" Background="White" Visibility="Hidden" HorizontalAlignment="Left" Width="286" />
+        <TextBox x:Name="Alarma" HorizontalAlignment="Left" Margin="0,182,0,99" TextWrapping="Wrap" Text="Alarma nueva :" Width="115"  Visibility="Visible" FontFamily="Wide Latin" Grid.IsSharedSizeScope="True" ScrollViewer.CanContentScroll="True" FontWeight="Bold" FontStyle="Italic" TextDecorations="Underline" Background="#FFA6A2A2" CaretBrush="Black" BorderBrush="Black"/>
+        <Button x:Name="OK" Content="OK" Margin="425,182,0,99" Visibility="Visible" Click="OK_Click"/>
+        <TextBox x:Name= "hora_alarma" Margin="120,182,0,99" TextWrapping="Wrap" Text="00:00:00" BorderBrush="Black" Background="White" Visibility="Visible" HorizontalAlignment="Left" Width="300" />
+        <ListBox x:Name="Alarmas" Margin="0,220,0,0" RenderTransformOrigin="0.505,0.493" SelectionChanged="Alarmas_SelectionChanged"/>
     </Grid>
 </Window>
