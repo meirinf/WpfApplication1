@@ -88,12 +88,40 @@ namespace WpfApplication1
             reloj.data = data;
             //Agregamos la alarma a la list box
             Alarmas.Items.Add(reloj.data);
-            
 
         }
 
         private void Alarmas_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+
+        }
+
+        private void turquia_Click(object sender, RoutedEventArgs e)
+        {
+            double horas = 3.0;
+            //textTimeAlter.Text = DateTime.Now.AddHours(horas).ToShortTimeString();
+            labelTurquia.Visibility = Visibility.Visible;
+            labelItalia.Visibility = Visibility.Hidden;
+            labelJapon.Visibility = Visibility.Hidden;
+        }
+
+        private void italia_Click(object sender, RoutedEventArgs e)
+        {
+            double horas = 1.0;
+            //textTimeAlter.Text = DateTime.Now.AddHours(horas).ToShortTimeString();
+            labelItalia.Visibility = Visibility.Visible;
+            labelJapon.Visibility = Visibility.Hidden;
+            labelTurquia.Visibility = Visibility.Hidden;
+
+        }
+
+        private void japon_Click(object sender, RoutedEventArgs e)
+        {
+            double horas = 9.0;
+            //textTimeAlter.Text = DateTime.Now.AddHours(horas).ToShortTimeString();
+            labelJapon.Visibility = Visibility.Visible;
+            labelTurquia.Visibility = Visibility.Hidden;
+            labelItalia.Visibility = Visibility.Hidden;
 
         }
     }

@@ -11,11 +11,28 @@
         <Menu x:Name="menu" Height="28" VerticalAlignment="Top" RenderTransformOrigin="0.506,0.154">
             <Button x:Name="Ayuda" Content="Ayuda" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Click="Button_Click" RenderTransformOrigin="-0.597,0.57"/>
         </Menu>
+        <MenuItem Header="_Otros Paises " Margin="253,221,1,0" RenderTransformOrigin="0.5,0.5" Height="98" VerticalAlignment="Top" >
+            <MenuItem.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.001"/>
+                    <RotateTransform Angle="-0.082"/>
+                    <TranslateTransform Y="0.002"/>
+                </TransformGroup>
+            </MenuItem.RenderTransform>
+            <MenuItem Header="Turquia" Click="turquia_Click"/>
+            <MenuItem Header="Italia" Click="italia_Click"/>
+            <MenuItem Header="Japon" Click="japon_Click"/>
+        </MenuItem>
         <Button x:Name="Programar" Content="Programar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="96" Click="Programar_Click" Margin="99,2,0,0" />
         <!-- Visibility : ES PARA CAMBIAR LA VISIBILIDAD HIDDEN (INVISIBLE) VISIBLE (SE VE) -->
         <TextBox x:Name="Alarma" HorizontalAlignment="Left" Margin="0,182,0,99" TextWrapping="Wrap" Text="Alarma nueva :" Width="115"  Visibility="Visible" FontFamily="Wide Latin" Grid.IsSharedSizeScope="True" ScrollViewer.CanContentScroll="True" FontWeight="Bold" FontStyle="Italic" TextDecorations="Underline" Background="#FFA6A2A2" CaretBrush="Black" BorderBrush="Black"/>
         <Button x:Name="OK" Content="OK" Margin="425,182,0,99" Visibility="Visible" Click="OK_Click"/>
         <TextBox x:Name= "hora_alarma" Margin="120,182,0,99" TextWrapping="Wrap" Text="00:00:00" BorderBrush="Black" Background="White" Visibility="Visible" HorizontalAlignment="Left" Width="300" />
-        <ListBox x:Name="Alarmas" Margin="0,220,0,0" RenderTransformOrigin="0.505,0.493" SelectionChanged="Alarmas_SelectionChanged"/>
+        <ListBox x:Name="Alarmas" Margin="0,220,261,0" RenderTransformOrigin="0.505,0.493" SelectionChanged="Alarmas_SelectionChanged"/>
+        <Label x:Name="label1" Content="Hora Catalunya" HorizontalAlignment="Left" Margin="200,0,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelJapon" Content="Japon" HorizontalAlignment="Left" Margin="254,294,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelItalia" Content="Italia" HorizontalAlignment="Left" Margin="254,268,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelTurquia" Content="Turquia" HorizontalAlignment="Left" Margin="254,242,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
